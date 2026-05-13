@@ -1,0 +1,6 @@
+name: astrbot_plugin_lark_file_handler
+display_name: 飞书文件处理器
+desc: 自动处理飞书消息中的文件附件，提取文本内容供 LLM 读取。支持 docx、pdf、xlsx、pptx、txt、md 等格式。
+version: v1.0.0
+author: 渺渺
+repo: https://github.com/deku772/Rbot
