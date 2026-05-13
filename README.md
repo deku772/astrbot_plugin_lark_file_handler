@@ -1,0 +1,1 @@
+# astrbot_plugin_lark_file_handler
