@@ -1,0 +1,5 @@
+# 核心依赖（纯 Python，无 C 扩展，所有平台直接安装）
+python-docx>=0.8.11
+PyPDF2>=3.0.0
+openpyxl>=3.1.0
+python-pptx>=0.6.21
