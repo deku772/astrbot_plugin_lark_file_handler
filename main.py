@@ -78,11 +78,12 @@ class LarkFileHandler(Star):
         通过 event.set_extra 将提取的内容传递给 on_llm_request 钩子，
         同时修改 event.message_str 作为备用注入路径。
         """
+        msg_repr = repr(event.message_str)[:100]
         logger.info(
             f"[LarkFile] on_file_message 被触发 | "
             f"platform={event.get_platform_name()} | "
             f"session={event.session_id} | "
-            f"msg_str={event.message_str!r[:100]}"
+            f"msg_str={msg_repr}"
         )
 
         try:
