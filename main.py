@@ -71,7 +71,7 @@ class LarkFileHandler(Star):
         logger.info("[LarkFile] 插件已初始化，等待飞书文件消息...")
 
     @filter.platform_adapter_type(PlatformAdapterType.LARK)
-    @filter.event_message_type(EventMessageType.ALL)
+    @filter.event_message_type(EventMessageType.ALL, priority=999）
     async def on_file_message(self, event: AstrMessageEvent):
         """拦截飞书文件消息，自动下载并提取内容。
 
